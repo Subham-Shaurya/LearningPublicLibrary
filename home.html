@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1dc055f0a8.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&family=Roboto+Slab:wght@700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        .heading{
+            background-color: rgb(42, 87, 249);
+            width: 100%;
+            display: flex;
+            height: 5pc;
+        }
+        .heading h1{
+            font-family: 'Roboto Slab', serif;
+            color: #ffffffff;
+            /*display: inline;*/
+            position: relative;
+            top: 12%;
+            left: 5%;
+            
+        }
+        .heading h1 span{
+            color: #212121;
+        }
+        .heading ul{
+            position: relative;
+            top: 30%;
+            left: 90%;
+        }
+        .heading ul li{
+            display: inline;
+        }
+        .heading ul a{
+            text-decoration: none;
+            color: #ffffffff;
+            margin: 0 15px 0 15px;
+            padding: 7px;
+        }
+        .heading ul a:hover{
+            background-color: #ffffffff;
+            border-radius: 5px;
+            color: #212121;
+        }
+        .main{
+            width: 100%;
+            height: 30pc;
+            padding: 10px;
+            background-color: #ffffffff;
+            background-image: url("lib_img.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .main .box1{
+            margin: 10px 20px;
+            padding: 10px;
+            position: relative;
+            width: 35%;
+            top: 17%;
+            left: 8%;
+            
+        }
+        .main .box1 h1{
+            font-size: 2.7rem;
+            color: rgb(56, 56, 56);
+        }
+        .box1 button{
+            color: #ffffffff;
+            background-color: rgb(42, 87, 249);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 10%;
+            padding: 5px 8px 5px 10px;
+        }
+        .box1 button i{
+            margin-left: 5px;
+        }
+        .box1 button:hover{
+            background-color: #ffffffff;
+            color: rgb(42, 87, 249);
+            border: 1px solid rgb(42, 87, 249);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Learning<span> Public</span></h1>
+            <nav class="nav">
+                <ul>
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="issue.html"><li>Issue/Return</li></a>
+                    <a href="admin_login.html"><li>Admin Login</li></a>
+                    <a href="login.html"><li>Student Login</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="box1">
+                <h1>Welcome to <span style="color: blue;">Learning </span>Public Library</h1>
+                <a href="register.html"><button>Join<i class="fa-solid fa-angle-right"></i></button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
